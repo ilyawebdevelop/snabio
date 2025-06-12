@@ -1,0 +1,106 @@
+<section class="sect pt-0">
+  <div class="container">
+
+    <div class="shopSearchW searchW mb-4">
+      <input type="search" placeholder="Поиск по сайту">
+      <button class="headerSearchBtn button button--green">Найти</button>
+    </div>
+
+    <div class="catList mb-4">
+      <ul>
+        <li>
+          <a href="#">Перкарбонат Натрия</a>
+        </li>
+        <li>
+          <a href="#">Эстеркват (Катионные Пав)</a>
+        </li>
+        <li>
+          <a href="#">Поликватерниум-7</a>
+        </li>
+        <li>
+          <a href="#">Эстеркват (Катионные Пав)</a>
+        </li>
+        <li>
+          <a href="#">Поликватерниум-7</a>
+        </li>
+        <li>
+          <a href="#">Перкарбонат Натрия</a>
+        </li>
+        <li>
+          <a href="#">Эстеркват (Катионные Пав)</a>
+        </li>
+        <li>
+          <a href="#">Поликватерниум-7</a>
+        </li>
+        <li>
+          <a href="#">Эстеркват (Катионные Пав)</a>
+        </li>
+        <li>
+          <a href="#">Поликватерниум-7</a>
+        </li>
+      </ul>
+      <button class="catListMore d-flex align-items-center gap-2" type="button">
+        Показать все
+        <img src="@img/icons/arrow-down.svg" alt="arrow">
+      </button>
+    </div>
+
+    <div class="d-flex align-items-center justify-content-between mb-30">
+      <div class="shopSortW">
+        <div class="selectItem">
+          <div class="selectItemName">Показать по:</div>
+          <div class="selectW">
+            <select name="show_16_items" id="show_16_items">
+              <option value="16">16</option>
+              <option value="12">12</option>
+              <option value="8">8</option>
+            </select>
+          </div>
+        </div>
+        <div class="selectItem">
+          <div class="selectItemName">Сортировать:</div>
+          <div class="selectW">
+            <select name="sorting" id="sorting">
+              <option value="sort_price_1">по возрастанию цены</option>
+              <option value="sort_price_2">по убыванию цены</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="showType">
+        <div class="showTypeBtn">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#show-block"></use>
+          </svg>
+        </div>
+        <div class="showTypeBtn active">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#show-list"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="catGrid catGrid--list mb-5">
+      @@include('../shop/card-1.html',{})
+      @@include('../shop/card-2.html',{})
+      @@include('../shop/card-3.html',{})
+      @@include('../shop/card-4.html',{})
+      @@include('../shop/card-1.html',{})
+      @@include('../shop/card-2.html',{})
+      @@include('../shop/card-3.html',{})
+      @@include('../shop/card-4.html',{})
+    </div>
+    <nav class="woocommerce-pagination" aria-label="Product Pagination">
+      <ul class="page-numbers">
+        <li><span aria-label="Page 1" aria-current="page" class="page-numbers current">1</span></li>
+        <li><a aria-label="Page 2" class="page-numbers" href="#" bis_skin_checked="1">2</a></li>
+        <li><a aria-label="Page 3" class="page-numbers" href="#" bis_skin_checked="1">3</a></li>
+        <li><a aria-label="Page 4" class="page-numbers" href="#" bis_skin_checked="1">4</a></li>
+        <li><a aria-label="Page 5" class="page-numbers" href="#" bis_skin_checked="1">5</a></li>
+        <li><a class="next page-numbers" href="#" bis_skin_checked="1">→</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</section>

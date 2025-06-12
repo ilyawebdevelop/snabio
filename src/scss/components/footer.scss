@@ -1,0 +1,175 @@
+// Footer
+.footer {
+  &T {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    background: #F5F5F5;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    @media(max-width: 575px){
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    &W {
+      column-gap: 40px;
+      @media(max-width: 1199px){
+        column-gap: 30px;
+      }
+      @media(max-width: 767px){
+        flex-wrap: wrap;
+        row-gap: 30px;
+      }
+      @media(max-width: 575px){
+        flex-direction: column;
+      }
+    }
+  }
+
+  &B {
+    background: #EBEBEB;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  &Text {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.50);
+    margin-top: 40px;
+    @media(max-width: 991px){
+      text-align: center;
+    }
+    @media(max-width: 575px){
+      margin-top: 25px;
+    }
+  }
+  &Contacts {
+    width: 300px;
+    @media(max-width: 767px){
+      width: 250px;
+    }
+    @media(max-width: 575px){
+      width: 100%;
+    }
+  }
+  &Nav {
+    width: 220px;
+    @media(max-width: 767px){
+      width: 200px;
+    }
+    @media(max-width: 575px){
+      width: 100%;
+    }
+    &--offset {
+      padding-top: 44px;
+      @media(max-width: 575px){
+        padding-top: 0;
+      }
+    }
+
+    &Title {
+      margin-bottom: 25px;
+      font-size: 20px;
+      @media(max-width: 767px){
+        margin-bottom: 15px;
+      }
+      @media(max-width: 575px){
+        text-align: center;
+      }
+    }
+
+    ul {
+      li {
+        margin-bottom: 15px;
+        @media(max-width: 1199px){
+          margin-bottom: 10px;
+        }
+        @media(max-width: 575px){
+          text-align: center;
+        }
+
+        a {
+          font-size: 18px;
+          line-height: normal;
+          @media(max-width: 1199px){
+            font-size: 16px;
+          }
+
+          &:hover {
+            color: var(--green);
+          }
+        }
+      }
+    }
+  }
+  .logo {
+    margin-bottom: 40px;
+    display: block;
+    @media(max-width: 1199px){
+      margin-bottom: 30px;
+    }
+    img {
+      width: 240px;
+      @media(max-width: 1199px){
+        width: 200px;
+      }
+      @media(max-width: 575px){
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+  &Phone {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 120%;   
+    display: block;
+    width: fit-content;
+    @media(max-width: 1199px){
+      font-size: 22px;
+    }
+    @media(max-width: 575px){
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .socials {
+    margin-bottom: 25px;
+    ul {
+      column-gap: 25px;
+      @media(max-width: 575px){
+        justify-content: center;
+      }
+    }
+  }
+}
+.footerCallback {
+  font-size: 18px;
+  line-height: normal;
+  display: block;
+  margin-bottom: 25px;
+  width: fit-content;
+  @media(max-width: 1199px){
+    font-size: 16px;
+  }
+  @media(max-width: 575px){
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.footerMail,.footerAddress, .footerWork {
+  font-size: 18px;
+  line-height: normal;
+  margin-bottom: 25px;
+  display: block;
+  width: fit-content;
+  @media(max-width: 1199px){
+    font-size: 16px;
+  }
+  @media(max-width: 575px){
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}

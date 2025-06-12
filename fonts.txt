@@ -1,0 +1,16 @@
+geologica
+200
+300(btn)
+400
+500(h2)
+600(h1)
+
+16px
+100%
+
+h1 44px 100% 
+h2 36px 100%   span green
+h3 18px 120%
+
+
+btn 300   18px   100%   

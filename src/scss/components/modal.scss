@@ -1,0 +1,77 @@
+// modal
+.modal {
+  display: none;
+  border-radius: 12px;
+  border: 1px solid #EFEFEF;
+  background: #FFF;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.20);  
+  padding: 50px;
+  @media(max-width: 575px){
+    padding: 30px 25px;
+  }
+  .sectHead {
+    margin-bottom: 40px;
+    @media(max-width: 767px){
+      margin-bottom: 20px;
+    }
+  }
+  .btn-close {
+    background: none;
+    opacity: 1;
+  }
+  .h2 {
+    font-size: 24px;
+    line-height: 120%;
+  }
+  &Descr {
+    opacity: .7;
+    margin-top: 10px;
+  }
+  .fileW {
+    label {
+      color: var(--main-color);
+    }
+  }
+}
+
+#modalCity {
+  width: 900px;
+}
+.modalCityW{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 40px;
+  row-gap: 10px;
+  @media(max-width: 575px){
+    column-gap: 20px;
+  }
+  a {
+    grid-column: 4 span;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    @media(max-width: 575px){
+      grid-column: 6 span;
+    }
+    @media(max-width: 359px){
+      grid-column: 12 span;
+    }
+    &::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background-color: var(--green);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    &:hover {
+      color: var(--green);
+    }
+  }
+}
+.fancybox__backdrop {
+  background: rgba(26, 26, 26, 0.50);  
+}
+#modalOrder {
+  width: 750px;
+}

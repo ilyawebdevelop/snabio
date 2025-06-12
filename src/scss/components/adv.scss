@@ -1,0 +1,126 @@
+.adv {
+  background-color: #FAFAFA;
+  overflow: hidden;
+  .container {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      left: -300px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 615px;
+      height: 615px;
+      background: url('@img/adv/adv-round-l.svg') no-repeat center center / contain;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      right: -300px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 615px;
+      height: 615px;
+      background: url('@img/adv/adv-round-r.svg') no-repeat center center / contain;
+    }
+  }
+  .sectHead {
+    position: relative;
+    z-index: 1;
+  }
+  &Grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 40px;
+    position: relative;
+    z-index: 1;
+    @media(max-width: 1199px){
+      gap: 20px;
+    }
+    @media(max-width: 575px){
+      gap: 10px;
+    }
+  }
+
+  &Item {
+    border-radius: 10px;
+    border: 1px solid rgba(45, 160, 75, 0.20);
+    background: #FFF;
+    padding: 20px;
+    grid-column: 3 span;
+    @media(max-width: 991px){
+      grid-column: 4 span;
+    }
+    @media(max-width: 767px){
+      grid-column: 6 span;
+    }
+    @media(max-width: 400px){
+      grid-column: 12 span;
+    }
+    &Img {
+      width: 70px;
+      margin-bottom: 30px;
+      @media(max-width: 575px){
+        width: 40px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+.advAboutGrid{
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 40px;
+  row-gap: 50px;
+  @media(max-width: 1199px){
+    column-gap: 15px;
+    row-gap: 15px;
+  }
+}
+.advAboutItem {
+  border-radius: 10px;
+  border: 1px solid rgba(45, 160, 75, 0.20);
+  background: #FFF;  
+  padding: 30px 20px;
+  grid-column: 4 span;
+  display: flex;
+  align-items: flex-start;
+  column-gap: 20px;
+  @media(max-width: 991px){
+    grid-column: 6 span;
+  }
+  @media(max-width: 767px){
+   flex-direction: column;
+  }
+  @media(max-width: 575px){
+    grid-column: 12 span;
+  }
+  &Num {
+    color: #2DA04B;
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 100%; 
+    opacity: .2;
+    @media(max-width: 767px){
+      font-size: 70px;
+      margin-bottom: 10px;
+    }
+  }
+  &Name {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+    @media(max-width: 767px){
+      margin-bottom: 10px;
+    }
+    @media(max-width: 575px){
+      font-size: 20px;
+    }
+  }
+  &Text {
+    line-height: normal;
+  }
+}

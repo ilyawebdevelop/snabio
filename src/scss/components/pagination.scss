@@ -1,0 +1,27 @@
+.woocommerce-pagination {
+  border-bottom: 1px solid #F1F1F1;
+  .page-numbers{
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    li {
+      a, span {
+        width: 39px;
+        height: 39px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 2px solid transparent;
+        font-size: 18px;
+        &.current {
+          border-color: var(--green);
+        }
+      }
+      a {
+        &:hover {
+          color: var(--green);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.socials {
+  ul {
+    display: flex;
+    align-items: center;
+
+    li {
+      a {
+        &:hover {
+          opacity: .8;
+        }
+        img {
+          width: 23px;
+        }
+      }
+    }
+  }
+}

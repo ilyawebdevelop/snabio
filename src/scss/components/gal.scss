@@ -1,0 +1,36 @@
+.gal {
+
+  &Slider {
+    overflow: visible;
+    padding-right: 80px;
+    @media(max-width: 575px){
+      padding-right: 50px;
+    }
+  }
+
+  &Slide {
+    transition: opacity .2s linear;
+
+    &:hover {
+      opacity: .8;
+    }
+
+    img {
+      height: 400px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+
+      @media(max-width: 1199px) {
+        height: 300px;
+      }
+      @media(max-width: 575px){
+        height: 55vw;
+      }
+    }
+  }
+}
+
+.galSliderW {
+  overflow: hidden;
+}

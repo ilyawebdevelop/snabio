@@ -1,0 +1,29 @@
+.breadcrumbs {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #F5F5F5;
+}
+
+.aioseo-breadcrumbs {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 10px;
+  column-gap: 10px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  color: #868686;
+}
+
+.aioseo-breadcrumbs a {
+  -webkit-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+  color: var(--main-color);
+}
+
+.aioseo-breadcrumbs a:hover {
+  color: var(--green);
+}

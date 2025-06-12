@@ -1,0 +1,41 @@
+<section class="productSliderW sect pt-0">
+  <div class="container">
+
+    <div class="sectHead d-flex gap-5 justify-content-between">
+      <h2 class="h2">
+        <span>Популярные</span> товары
+      </h2>
+      <div class="navArrowW d-flex">
+        <button class="navArrow navArrowPrev">
+          <img src="@img/icons/arrow-prev.svg" alt="arrow">
+        </button>
+        <button class="navArrow navArrowNext">
+          <img src="@img/icons/arrow-next.svg" alt="arrow">
+        </button>
+      </div>
+    </div>
+
+    <div class="swiper productSlider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          @@include('../shop/card-1.html',{})
+        </div>
+        <div class="swiper-slide">
+          @@include('../shop/card-2.html',{})
+        </div>
+        <div class="swiper-slide">
+          @@include('../shop/card-3.html',{})
+        </div>
+        <div class="swiper-slide">
+          @@include('../shop/card-4.html',{})
+        </div>
+        <div class="swiper-slide">
+          @@include('../shop/card-1.html',{})
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,163 @@
+.order {
+  background-color: #2DA04B;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  padding-top: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+  @media(max-width: 767px){
+    background-size: cover;
+    background-position: left;
+  }
+
+  .container {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    @media(max-width: 1400px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    @media(max-width: 767px){
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+
+  &Title,
+  &Descr {
+    color: #fff;
+  }
+
+  &Title {
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &Descr {
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 1;
+    @media(max-width: 767px){
+      margin-bottom: 25px;
+    }
+  }
+
+  &Form {
+    max-width: 600px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .agreement {
+    color: #fff;
+    label {
+      color: #fff;
+    }
+
+    input {     
+
+      &:checked {
+        &+label {
+          .rect {
+            background: url('@img/icons/check-arrow.svg') no-repeat center center / 10px;
+          }
+        }
+      }
+    }
+
+    .rect {    
+      border: 1px solid #FFF;  
+    }
+  }
+
+  .formInput {
+
+    border: 3px solid transparent;
+    background: #FFF;
+
+    &::placeholder {
+      color: #868686;
+    }
+
+    &:focus {
+      border-color: #A7DFB4;
+    }
+  }
+
+  .formText {
+    border: 3px solid transparent;
+    background: #FFF;
+    height: 110px;
+
+    &:focus {
+      border-color: #A7DFB4;
+    }
+  }
+}
+
+.orderRound {
+  height: 100%;
+  position: absolute;
+  left: -800px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+.orderRoundRight {
+  height: 100%;
+  position: absolute;
+  right: -800px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+.orderW {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 40px;
+  @media(max-width: 767px){
+    column-gap: 0;
+  }
+}
+
+.orderL {
+  grid-column: 6 span;
+  @media(max-width: 767px){
+    grid-column: 12 span;
+  }
+}
+
+.orderR {
+  grid-column: 6 span;
+  @media(max-width: 767px){
+    grid-column: 12 span;
+  }
+}
+
+.orderLogo {
+  position: absolute;
+  z-index: 2;
+  left: -161px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.fileW{
+  label {
+    display: flex;
+    color: #fff;
+    column-gap: 15px;
+    cursor: pointer;
+  }
+}
+.order-product{
+  border-top: 5px dashed rgba(255, 255, 255, 0.20);
+  border-bottom: 5px dashed rgba(255, 255, 255, 0.20);
+}
