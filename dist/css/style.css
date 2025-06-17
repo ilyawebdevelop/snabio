@@ -4332,6 +4332,11 @@ a.color--gray {
   }
 }
 
+.productVarWeight {
+  margin-top: 5px;
+  color: #868686;
+}
+
 .adv {
   background-color: #FAFAFA;
   overflow: hidden;
