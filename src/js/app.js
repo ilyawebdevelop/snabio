@@ -120,7 +120,7 @@ catListMore?.addEventListener('click', () => {
   catListMore.style.display = 'none';
 });
 
-if(document.querySelector('.copyBtn')){
+if (document.querySelector('.copyBtn')) {
   let clipboard = new ClipboardJS('.copyBtn');
   clipboard.on('success', function (e) {
     console.info('Action:', e.action);
@@ -176,10 +176,22 @@ btnClose?.addEventListener('click', function (e) {
   menuClose();
 });
 
+
+let phoneMobileBtn = document.getElementById('phone-mobile-btn');
+let phoneSmActiveBlock = document.querySelector('.phone-sm-active-block');
+
+phoneMobileBtn.addEventListener('click', () => {
+  phoneSmActiveBlock.classList.add('active');
+});
+
 document.addEventListener('click', e => {
   let target = e.target;
   let its_nav = target == menu || menu.contains(target);
   let overlay_is_active = mobMenuOverlay.classList.contains('active');
+
+  let its_phone_menu = target == phoneSmActiveBlock || phoneSmActiveBlock.contains(target);
+  let its_phoneMobileBtn = target == phoneMobileBtn || phoneMobileBtn.contains(target);
+
 
   if (!its_nav && overlay_is_active) {
     toggleMenu();
@@ -187,4 +199,8 @@ document.addEventListener('click', e => {
     bodyOverflow();
     overlayToggle();
   }
+  if (!its_phone_menu && !its_phoneMobileBtn) {
+    phoneSmActiveBlock.classList.remove('active');
+  }
 });
+

@@ -15,3 +15,8 @@
     }
   }
 }
+@media(max-width: 991px) {
+  .socials-lg ul li:last-child {
+    display: none;
+  }
+}

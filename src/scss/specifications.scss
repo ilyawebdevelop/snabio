@@ -851,3 +851,8 @@ a.color--gray {
     display: block;
   }
 }
+@media(max-width: 575px) {
+  .w-sm-100 {
+    width: 100% !important;
+  }
+}

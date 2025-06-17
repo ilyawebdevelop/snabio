@@ -4,6 +4,9 @@
   @media(max-width: 991px){
     padding-top: 30px;
   }
+  @media(max-width: 575px){
+    padding-top: 0;
+  }
   .container {
     @media(max-width: 575px){
       padding-left: 0;

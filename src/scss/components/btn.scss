@@ -88,6 +88,9 @@
   @media(max-width: 991px){
     min-width: 192px;
   }
+  @media(max-width: 575px){
+    width: 100%;
+  }
   .rectW{
     width: 20px;
     height: 12px;
@@ -134,4 +137,9 @@
     background-color: rgba($color: #2DA04B, $alpha: .1);
     color: var(--main-color);
   }
+}
+@media(max-width: 575px){
+ .headerCatalogBtn {
+  justify-content: flex-start;
+ } 
 }

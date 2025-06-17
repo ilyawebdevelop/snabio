@@ -2999,6 +2999,11 @@ a.color--gray {
   display: block;
 }
 
+@media (max-width: 575px) {
+  .w-sm-100 {
+    width: 100% !important;
+  }
+}
 .button {
   display: flex;
   align-items: center;
@@ -3093,6 +3098,11 @@ a.color--gray {
     min-width: 192px;
   }
 }
+@media (max-width: 575px) {
+  .headerCatalogBtn {
+    width: 100%;
+  }
+}
 .headerCatalogBtn .rectW {
   width: 20px;
   height: 12px;
@@ -3143,6 +3153,11 @@ a.color--gray {
   color: var(--main-color);
 }
 
+@media (max-width: 575px) {
+  .headerCatalogBtn {
+    justify-content: flex-start;
+  }
+}
 /* Hamburger Menu */
 .hamburger {
   align-self: center;
@@ -3378,6 +3393,7 @@ a.color--gray {
   padding-top: 15px;
   padding-bottom: 15px;
   border-bottom: 1px solid #F1F1F1;
+  position: relative;
 }
 .headerB {
   border-bottom: 1px solid #F1F1F1;
@@ -3525,6 +3541,63 @@ a.color--gray {
   animation: showsOverlay 0.5s;
 }
 
+@media (max-width: 575px) {
+  .headerB {
+    border-bottom: none;
+  }
+  .headerT {
+    border-bottom: none;
+  }
+}
+.phone-mobile {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .phone-mobile {
+    display: flex;
+  }
+}
+.phone-sm-active-block {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: calc(100% - 30px);
+  border-radius: 10px;
+  border: 1px solid rgba(37, 140, 58, 0.3);
+  background: #FFF;
+  top: 60px;
+  padding: 15px 30px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.phone-sm-active-block .headerPhoneItem {
+  max-width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.phone-sm-active-block.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.phone-sm-active-block::before {
+  content: "";
+  top: -19px;
+  right: 34px;
+  position: absolute;
+  width: 28px;
+  height: 26px;
+  background: url("../img/icons/menu-phone-rect.svg") no-repeat center center/contain;
+}
+
 .socials ul {
   display: flex;
   align-items: center;
@@ -3536,6 +3609,11 @@ a.color--gray {
   width: 23px;
 }
 
+@media (max-width: 991px) {
+  .socials-lg ul li:last-child {
+    display: none;
+  }
+}
 .intro {
   padding-top: 50px;
   padding-bottom: 0;
@@ -3543,6 +3621,11 @@ a.color--gray {
 @media (max-width: 991px) {
   .intro {
     padding-top: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .intro {
+    padding-top: 0;
   }
 }
 @media (max-width: 575px) {
