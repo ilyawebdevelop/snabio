@@ -3004,6 +3004,11 @@ a.color--gray {
     width: 100% !important;
   }
 }
+@media (max-width: 575px) {
+  .wrapper {
+    padding-top: 60px;
+  }
+}
 .button {
   display: flex;
   align-items: center;
@@ -3581,6 +3586,7 @@ a.color--gray {
   max-width: 220px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 
 .phone-sm-active-block.active {
@@ -3598,6 +3604,16 @@ a.color--gray {
   background: url("../img/icons/menu-phone-rect.svg") no-repeat center center/contain;
 }
 
+@media (max-width: 575px) {
+  .headerT {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    z-index: 2;
+  }
+}
 .socials ul {
   display: flex;
   align-items: center;

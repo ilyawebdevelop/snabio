@@ -49,7 +49,8 @@ table {
 section {
   padding-top: 100px;
   padding-bottom: 100px;
-  @media(max-width: 1400px){
+
+  @media(max-width: 1400px) {
     padding-top: 80px;
     padding-bottom: 80px;
   }
@@ -329,12 +330,13 @@ h4,
 .justify-content-between {
   justify-content: space-between;
 }
+
 .justify-content-center {
   justify-content: center;
 }
 
 .justify-content-start {
-  justify-content: start!important;
+  justify-content: start !important;
 }
 
 .justify-content-lg-center {
@@ -342,8 +344,9 @@ h4,
     justify-content: center;
   }
 }
+
 .justify-content-md-start {
-  @media(max-width: 767px){
+  @media(max-width: 767px) {
     justify-content: flex-start;
   }
 }
@@ -351,8 +354,9 @@ h4,
 .align-items-center {
   align-items: center;
 }
+
 .align-items-md-start {
-  @media(max-width: 767px){
+  @media(max-width: 767px) {
     align-items: flex-start;
   }
 }
@@ -368,8 +372,9 @@ h4,
     flex-direction: column;
   }
 }
+
 .flex-md-col {
-  @media(max-width: 767px){
+  @media(max-width: 767px) {
     flex-direction: column;
   }
 }
@@ -399,13 +404,15 @@ h4,
     gap: 10px;
   }
 }
+
 .gap-sm-0 {
-  @media(max-width: 575px){
+  @media(max-width: 575px) {
     gap: 0;
   }
 }
+
 .gap-md-30 {
-  @media(max-width: 767px){
+  @media(max-width: 767px) {
     gap: 30px;
   }
 }
@@ -453,16 +460,19 @@ h4,
 .mt-1 {
   margin-top: 5px;
 }
+
 .mt-10 {
   margin-top: 10px;
 }
+
 .mt-20 {
   margin-top: 20px;
 }
 
 .mt-8 {
   margin-top: 80px;
-  @media(max-width: 767px){
+
+  @media(max-width: 767px) {
     margin-top: 20px;
   }
 }
@@ -485,7 +495,8 @@ h4,
 
 .mb-20 {
   margin-bottom: 20px;
-  @media(max-width: 575px){
+
+  @media(max-width: 575px) {
     margin-bottom: 10px;
   }
 }
@@ -496,7 +507,8 @@ h4,
 
 .mb-4 {
   margin-bottom: 40px;
-  @media(max-width: 991px){
+
+  @media(max-width: 991px) {
     margin-bottom: 30px;
   }
 }
@@ -507,7 +519,8 @@ h4,
 
 .mb-8 {
   margin-bottom: 80px;
-  @media(max-width: 767px){
+
+  @media(max-width: 767px) {
     margin-bottom: 20px;
   }
 }
@@ -565,8 +578,9 @@ a.color--gray {
 .text--lg {
   font-size: 18px;
   line-height: normal;
-  @media(max-width: 991px){
-   font-size: 16px; 
+
+  @media(max-width: 991px) {
+    font-size: 16px;
   }
 }
 
@@ -577,16 +591,18 @@ a.color--gray {
 }
 
 .d-lg-block {
-  display: none!important;
+  display: none !important;
 
   @media(max-width: 991px) {
-    display: block!important;
+    display: block !important;
   }
 }
+
 .d-lg-flex {
-  display: none!important;
+  display: none !important;
+
   @media(max-width: 991px) {
-    display: flex!important;
+    display: flex !important;
   }
 }
 
@@ -604,7 +620,8 @@ a.color--gray {
 .pageHead {
   padding-top: 25px;
   padding-bottom: 40px;
-  @media(max-width: 991px){
+
+  @media(max-width: 991px) {
     padding-bottom: 25px;
   }
 }
@@ -631,7 +648,8 @@ a.color--gray {
 .shopSortW {
   display: flex;
   column-gap: 40px;
-  @media(max-width: 575px){
+
+  @media(max-width: 575px) {
     flex-direction: column;
     row-gap: 10px;
   }
@@ -655,21 +673,25 @@ a.color--gray {
     color: var(--gray);
   }
 }
+
 .searchItemWeight {
   min-width: 250px;
+
   &Name {
     font-size: 13px;
     font-weight: 100;
     margin-bottom: 5px;
     color: #868686;
   }
+
   ul {
     font-size: 14px;
     display: flex;
     flex-wrap: wrap;
     column-gap: 4px;
+
     li {
-      &:not(:last-child){
+      &:not(:last-child) {
         &::after {
           content: '/';
           font-size: 14px;
@@ -683,7 +705,8 @@ a.color--gray {
 .showType {
   display: flex;
   column-gap: 20px;
-  @media(max-width: 767px){
+
+  @media(max-width: 767px) {
     display: none;
   }
 }
@@ -720,13 +743,15 @@ a.color--gray {
   border-bottom: 1px solid #F1F1F1;
   padding-top: 20px;
   padding-bottom: 20px;
-  @media(max-width: 991px){
+
+  @media(max-width: 991px) {
     flex-direction: column;
     row-gap: 30px;
   }
 
   &Content {
     max-width: 300px;
+
     &T {
       display: flex;
       column-gap: 20px;
@@ -768,7 +793,8 @@ a.color--gray {
   display: flex;
   align-items: center;
   column-gap: 30px;
-  @media(max-width: 575px){
+
+  @media(max-width: 575px) {
     flex-direction: column;
     align-items: flex-start;
     row-gap: 15px;
@@ -831,7 +857,8 @@ a.color--gray {
 
   .inputW {
     grid-column: 6 span;
-    @media(max-width: 575px){
+
+    @media(max-width: 575px) {
       grid-column: 12 span;
     }
   }
@@ -851,8 +878,15 @@ a.color--gray {
     display: block;
   }
 }
+
 @media(max-width: 575px) {
   .w-sm-100 {
     width: 100% !important;
+  }
+}
+
+@media(max-width: 575px) {
+  .wrapper {
+    padding-top: 60px;
   }
 }
