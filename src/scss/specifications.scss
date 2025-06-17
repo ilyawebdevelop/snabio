@@ -655,6 +655,30 @@ a.color--gray {
     color: var(--gray);
   }
 }
+.searchItemWeight {
+  min-width: 250px;
+  &Name {
+    font-size: 13px;
+    font-weight: 100;
+    margin-bottom: 5px;
+    color: #868686;
+  }
+  ul {
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 4px;
+    li {
+      &:not(:last-child){
+        &::after {
+          content: '/';
+          font-size: 14px;
+          color: #868686;
+        }
+      }
+    }
+  }
+}
 
 .showType {
   display: flex;
@@ -755,6 +779,8 @@ a.color--gray {
   font-size: 16px;
   line-height: 120%;
   font-weight: 400;
+  min-width: 124px;
+  text-align: end;
 }
 
 .searchItemL {
